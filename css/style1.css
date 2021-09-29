@@ -1,0 +1,253 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Merriweather Sans';
+}
+
+html, body{
+	overflow-x: hidden;
+	height: 100%;
+}
+
+input{
+	border: 0;
+}
+
+img{
+	width: 100%;
+	max-width: 500px;
+}
+
+.center{
+	max-width: 1280px;
+	padding:0 2%;
+	margin: 0 auto;
+}
+
+.w33{
+	width: 33.3%;
+}
+
+.w50{
+	width: 50%;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+.clear{
+	clear: both;
+}
+
+/**Estilos do site**/
+
+header{
+	background: #66ff66;	
+	padding: 10px 0;
+}
+
+
+header .logo{
+	font-size: 40px;
+	cursor: pointer;
+}
+
+.logo a{
+	text-decoration: none;
+	color: white;
+}
+
+.mobile{
+	display: none;
+}
+nav.desktop ul{
+	list-style-type: none;
+}
+
+nav.desktop li{
+	padding: 10px 10px;
+	text-transform: uppercase;
+	display: inline-block;
+	cursor: pointer;
+}
+nav.desktop a{
+	color:white;
+	text-decoration: none;
+
+}
+
+nav.desktop a:hover{
+	text-decoration: underline;
+}
+
+section.banner-principal{
+	width: 100%;
+	height: 600px;
+	background-image: url('../imagens/foto0.jpeg');
+	background-size: cover;
+	position: relative;
+}
+.overlay{
+	z-index: 1;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.3);
+}
+
+section.banner-principal form{
+	width: 93%;
+	max-width: 600px;
+	position: absolute;
+	z-index: 2;
+	top: 50%; 
+	left: 50%;
+	transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+}
+
+section.banner-principal form h2{
+	color: white;
+	font-size: 30px;
+	text-align: center;
+}
+
+section.banner-principal form input[type=email]{
+	width: 100%;
+	height: 66px;
+	margin-top: 10px;
+	background: white;
+	color: black;
+	font-size: 22px;
+	padding-left: 10px;
+	border: 0;
+}
+
+section.banner-principal form input[type=submit]{
+	width: 100%;
+	height: 66px;
+	margin-top: 10px;
+	background: #66ff66;
+	color: black;
+	font-size: 22px;
+	padding-left: 10px;
+	cursor: pointer;
+	border: 0;
+}
+section.informacoes{
+	width: 100%;
+	background: #66ff66;
+}
+
+footer{
+	background: #66ff66;
+	padding: 40px 0;
+	text-align: center;
+}
+
+footer.fixed{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+section.erro-404{
+	position: relative;
+	min-height: 600px;s
+	padding: 30 px;
+}
+
+section.contato form h2{
+
+	color: white;
+	font-size: 30px;
+	text-align: center;
+
+}
+
+section.contato form input[type=nome,sobrenome,email]{
+	width: 100%;
+	height: 66px;
+	margin-top: 10px;
+	background: white;
+	color: black;
+	font-size: 22px;
+	padding-left: 10px;
+	border: 0;
+}
+
+section.contato form input[type=submit]{
+	width: 100%;
+	height: 66px;
+	margin-top: 10px;
+	background: #66ff66;
+	color: black;
+	font-size: 22px;
+	padding-left: 10px;
+	cursor: pointer;
+	border: 0;
+}
+
+#map{
+	width: 100%;
+	height: 400px;
+}
+
+
+
+@media screen and (max-width: 768px){
+	img{
+		float: none !important;
+		display: block;
+		margin:0 auto;
+		max-width: 500px;
+	}
+	.w50{
+		padding: 20px;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 660px){
+	nav.desktop{
+		display: none;
+	}
+	nav.mobile{
+		display: block;
+	}
+	.botao-mobile{
+		font-size: 24px;
+		cursor: pointer;
+		color: white;
+	}
+	nav.mobile ul{
+		top: 70px;
+		z-index: 3;
+		position: absolute;
+		left: 0;
+		display: none;
+		text-align: center;
+		width: 100%;
+	}
+	nav.mobile li{
+		font-size: 15px;
+		background-color:#66ff66;
+		border-style: solid; 
+		border-width: 2px;
+		padding: 8px 0;
+		width: 100%;
+	}
+	nav.mobile li a{
+		display: block;
+		color: white;
+		text-decoration: none;
+	}
+}
